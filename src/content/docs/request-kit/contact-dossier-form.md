@@ -14,7 +14,7 @@ This page is not a prototype specification form.
 
 The prototype itself must be described in the **SpQE Prototype Request Form**:
 
-[SpQE Prototype Request Form](./prototype-request-form/)
+[SpQE Prototype Request Form](/spqe-lab/request-kit/prototype-request-form/)
 
 
 ## What to Send

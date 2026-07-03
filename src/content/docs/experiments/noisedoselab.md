@@ -34,7 +34,7 @@ Here, the NoiseDoseLab CLI is used as a concrete case study. The page follows th
 
 The complete specification used to frame this prototype is available here:
 
-[Open the complete NoiseDoseLab SpecBlock example](http://localhost:8765/request-kit/noisedoselab-complete-specblock-example/)
+[Open the complete NoiseDoseLab SpecBlock example](/spqe-lab/request-kit/noisedoselab-complete-specblock-example/)
 
 ## User manual
 

@@ -14,9 +14,7 @@ export default defineConfig({
         { slug: 'foundations' },
         {
           label: 'Experiments',
-          items: [
-            { slug: 'experiments/self-audit' },
-            { slug: 'experiments/noisedoselab' },
+          items: [            { slug: 'experiments/noisedoselab' },
             { slug: 'experiments/data-workspace' },
             { slug: 'experiments/blender-spatial-relationships' },
             { slug: 'experiments/um-harness' }
@@ -51,3 +49,4 @@ export default defineConfig({
     })
   ]
 });
+
