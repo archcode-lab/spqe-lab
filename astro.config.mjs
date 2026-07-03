@@ -6,7 +6,7 @@ export default defineConfig({
   base: process.env.GITHUB_ACTIONS ? '/spqe-lab' : '/',
   integrations: [
     starlight({
-      title: 'ARCHCode Lab',
+      title: 'SpQE Lab',
       description: 'Applied research on controlled AI software generation.',
       customCss: ['./src/styles/archcode.css', './src/styles/custom.css'],
       sidebar: [
