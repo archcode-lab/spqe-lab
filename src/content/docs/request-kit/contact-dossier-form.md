@@ -80,7 +80,7 @@ I understand that review by SpQE does not create a commercial commitment, servic
 Send the completed SpecBlock JSON and the contact/disclosure text to:
 
 ```text
-contact@spqe.yahoo.fr
+pierredenisfr@yahoo.fr
 ```
 
 ## Submission Checklist
