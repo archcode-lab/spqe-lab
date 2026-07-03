@@ -59,7 +59,7 @@ The experiment is relevant to the broader **SPQE 3D** roadmap, but the qualified
 A generated user manual is available for the prototype.
 A PDF version of the generated user manual is available here:
 
-[Download the Blender API Capsule Extractor User Manual](/downloads/blender-api-capsule-extractor-user-manual.pdf)
+[Download the Blender API Capsule Extractor User Manual](/spqe-lab/downloads/blender-api-capsule-extractor-user-manual.pdf)
 
 
 The manual describes the CLI as a local, deterministic, stdlib-only tool for building backend documentation capsules from an already-unpacked official Blender Python API HTML tree.
@@ -663,5 +663,6 @@ VERDICT: PASS
 ```
 
 The prototype is therefore suitable for inclusion in the SPQE Lab showcase as a qualified Blender backend documentation extractor and as the first backend-capsule experiment supporting the broader SPQE 3D roadmap.
+
 
 

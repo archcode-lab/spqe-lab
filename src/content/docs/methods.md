@@ -9,7 +9,7 @@ ARCHCode Lab explores how AI systems can generate, audit, repair and document so
 
 <figure class="archcode-diagram-figure">
   <img
-    src="/images/methods/archcode-generation-loop.svg"
+    src="/spqe-lab/images/methods/archcode-generation-loop.svg"
     alt="ARCHCode prototype generation loop from SpecBlock to qualification"
   >
   <figcaption>
@@ -180,6 +180,7 @@ In that sense, ARCHCode Lab is better understood as a software forge than as a s
 The central idea is cybernetic: the generated prototype is observed, tested, corrected, and revalidated through feedback. ARCHCode Lab does not rely primarily on pruning large numbers of generated candidates. It favors repair, continuity, and traceability: keep the best available prototype alive, identify what fails, patch the relevant defect, and preserve what already works.
 
 This is the research direction of ARCHCode Lab Lab: making automated software generation more observable, more testable, and more governable, one concrete prototype at a time.
+
 
 
 

@@ -16,7 +16,7 @@ This page describes the general doctrine. It is a method page, not a single expe
 
 <figure class="archcode-diagram-figure">
   <img
-    src="/images/methods/diagram_family01.svg"
+    src="/spqe-lab/images/methods/diagram_family01.svg"
     alt="Family-driven generation flow from SpecBlock to deterministic S0-91 validation"
   >
   <figcaption>
@@ -302,3 +302,4 @@ controlled family selection
 ```
 
 This is enough to understand why family-driven generation matters without turning the method page into an implementation manual.
+

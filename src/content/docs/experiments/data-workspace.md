@@ -35,7 +35,7 @@ Here, the Data Workspace CLI is used as a concrete case study for a broader loca
 
 The complete specification used to frame this prototype is available here:
 
-[Open the complete DataWorkspace SpecBlock example](/request-kit/dataworkspace-complete-specblock-example/)
+[Open the complete DataWorkspace SpecBlock example](/spqe-lab/request-kit/dataworkspace-complete-specblock-example/)
 
 ## User manual
 
@@ -71,7 +71,7 @@ During vitrine qualification, the manual was not treated as decorative documenta
 * Schema version: 2.0
 * Generated: 2026-06-28 (UTC)
 
-[Download the Data Workspace CLI user manual as PDF](/experiments/data-workspace/user_manual.pdf)
+[Download the Data Workspace CLI user manual as PDF](/spqe-lab/experiments/data-workspace/user_manual.pdf)
 
 ## 1. Identification
 
@@ -974,3 +974,4 @@ VERDICT: PASS WITH DOCUMENTED GAPS
 The prototype is suitable for inclusion in the ARCHCode Lab Lab showcase as a transparent demonstration of generated software, executable qualification, and documented defect discovery.
 
 It should be presented as a strong prototype with known, reproducible limitations rather than as a fully qualified zero-gap prototype.
+

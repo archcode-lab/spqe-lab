@@ -32,7 +32,7 @@ Fourth, the showcase is an invitation to discuss partnerships.
 
 SpQE Lab can evolve in several directions depending on the right technical, commercial, or investment context.
 
-![SpQE Lab strategic futures and partners](/images/about/spqe-lab-strategic-futures-and-partners.svg)
+![SpQE Lab strategic futures and partners](/spqe-lab/images/about/spqe-lab-strategic-futures-and-partners.svg)
 
 ## What SpQE Lab is looking for
 
@@ -185,3 +185,4 @@ It should produce something that a human developer, researcher, founder, or tech
 That is the core ambition of SpQE Lab:
 
 to move from vague software ideas to generated, tested, documented prototypes through a controlled and evidence-guided engineering pipeline.
+
