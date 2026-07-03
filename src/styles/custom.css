@@ -1,0 +1,13 @@
+:root {
+  --sl-content-width: 56rem;
+  --sl-text-5xl: 3.1rem;
+  --sl-text-4xl: 2.2rem;
+}
+
+.sl-markdown-content h2 {
+  margin-top: 2.4rem;
+}
+
+.sl-markdown-content strong {
+  letter-spacing: 0.01em;
+}
