@@ -68,7 +68,7 @@ A typical UM_HARNESS probe may:
 
 CausalLab is a generated CLI prototype for exploratory causal-style analysis on CSV data.
 
-[Complete CausalLab SpecBlock Example](./complete-CausalLab-specblock-example/)
+[Complete CausalLab SpecBlock Example](/experiments/complete-causallab-specblock-example/)
 
 The generated user manual documented a workflow around the following commands:
 
@@ -79,7 +79,7 @@ The generated user manual documented a workflow around the following commands:
 - `simulate`;
 - `report`.
 
-[Download the CausalLab User Manual](./CausalLab-user-manual.pdf)
+[Download the CausalLab User Manual](/UM_HARNESS/CausalLab-user-manual.pdf)
 
 The manual described `schema` as a command that inspects a CSV input and returns information about the dataset. A manual-derived validation battery therefore expected `schema input.csv` to expose dataset columns, and expected `schema missing.csv` to fail as a user input error.
 
