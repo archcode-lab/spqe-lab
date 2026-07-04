@@ -6,8 +6,8 @@ export default defineConfig({
   base: process.env.GITHUB_ACTIONS ? '/spqe-lab' : '/',
   integrations: [
     starlight({
-      title: 'SpQE Lab',
-      description: 'Applied research on controlled AI software generation.',
+      title: 'Specification-to-Prototype Qualification Engine Lab',
+      description: 'SpQE Lab explores how structured prototype requests can be generated, tested, repaired, documented, and qualified as inspectable software prototypes.',
       customCss: ['./src/styles/archcode.css', './src/styles/custom.css'],
       sidebar: [
         { slug: 'index' },

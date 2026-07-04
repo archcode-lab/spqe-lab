@@ -1,8 +1,11 @@
 ---
+title: Specification-to-Prototype Qualification Engine Lab
+description: SpQE Lab turns structured prototype requests into generated, tested, repaired, documented, and inspectable software prototypes.
+---
 
-title: SpQE Lab
-description: Applied research on controlled AI software generation.
--------------------------------------------------------------------
+**SpQE Lab**
+
+SpQE Lab turns a structured prototype request into a generated, tested, repaired, documented, and inspectable software prototype.
 
 SpQE Lab explores a simple but difficult question:
 
