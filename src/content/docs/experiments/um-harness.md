@@ -85,47 +85,142 @@ The manual described `schema` as a command that inspects a CSV input and returns
 
 The initial prototype passed the basic command-surface checks, but it did not satisfy the documented workflow contract. The `schema` command returned command metadata instead of the schema of the provided CSV file. It also succeeded on a missing CSV path.
 
+```text
+=== UM_HARNESS manual battery :: CausalLab CLI ===
+ArchRoot : C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode
+Data     : C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv
+
+
+=== Résumé UM_HARNESS manual battery ===
+
+Name                                     Rc Args
+----                                     -- ----
+top_level_help                            0 --help
+no_args_behaves_like_help                 0
+schema_help                               0 schema --help
+variables_help                            0 variables --help
+correlate_help                            0 correlate --help
+explain_help                              0 explain --help
+simulate_help                             0 simulate --help
+report_help                               0 report --help
+schema_text                               0 schema C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv
+schema_json_suffix_format                 0 schema C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --for…
+schema_json_prefix_format                 0 --format json schema C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sa…
+schema_json_equals_format                 0 --format=json schema C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sa…
+variables_text                            0 variables C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv
+variables_json                            0 variables C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --…
+correlate_text                            0 correlate C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --…
+correlate_json                            0 correlate C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --…
+explain_text                              0 explain C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --ta…
+explain_json                              0 explain C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --ta…
+simulate_text                             0 simulate C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --t…
+simulate_json                             0 simulate C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --t…
+report_text                               0 report C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --tar…
+report_json                               0 report C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --tar…
+report_deterministic_first                0 report C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --tar…
+report_deterministic_second_same_command  0 report C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --tar…
+schema_missing_input                      2 schema
+variables_missing_input                   2 variables
+correlate_missing_input                   2 correlate
+explain_missing_input                     2 explain
+simulate_missing_input                    2 simulate
+report_missing_input                      2 report
+unknown_subcommand                        2 unknown
+unknown_global_argument                   2 --unknown
+unknown_option                            2 schema C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --bog…
+invalid_format                            2 schema C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --for…
+duplicate_format                          2 schema C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --for…
+correlate_missing_target                  2 correlate C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv
+simulate_missing_var                      2 simulate C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --t…
+simulate_missing_delta                    2 simulate C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --t…
+simulate_invalid_delta                    2 simulate C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --t…
+report_missing_output                     2 report C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --tar…
+schema_missing_csv                        0 schema C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\missing.csv
+correlate_unknown_target                  2 correlate C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --…
+correlate_non_numeric_target              2 correlate C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --…
+simulate_unknown_driver                   2 simulate C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --t…
+
+
+Logs : C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\logs
+
+=== ÉCHECS DÉTECTÉS ===
+[schema_text] STDOUT ne contient pas le jeton attendu : score
+  Args   : python -m app.cli schema C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv
+  RC     : 0
+  STDOUT : C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\logs\009_schema_text.stdout.txt
+  STDERR : C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\logs\009_schema_text.stderr.txt
+
+  STDOUT preview:
+schema commands: correlate, explain, report, schema, simulate, variables
+
+  STDERR preview:
+<empty>
+[schema_text] STDOUT ne contient pas le jeton attendu : exposure
+  Args   : python -m app.cli schema C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv
+  RC     : 0
+  STDOUT : C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\logs\009_schema_text.stdout.txt
+  STDERR : C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\logs\009_schema_text.stderr.txt
+
+  STDOUT preview:
+schema commands: correlate, explain, report, schema, simulate, variables
+
+  STDERR preview:
+<empty>
+[schema_json_suffix_format] Le JSON ne contient pas le jeton attendu : exposure
+  Args   : python -m app.cli schema C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\causalab_sample.csv --format json
+  RC     : 0
+  STDOUT : C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\logs\010_schema_json_suffix_format.stdout.txt
+  STDERR : C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\logs\010_schema_json_suffix_format.stderr.txt
+
+  STDOUT preview:
+{"command":"schema","payload":{"commands":{"correlate":{"options":[{"name":"input","position":"positional","required":true,"type":"path"},{"name":"--target","required":true,"type":"string"}],"output_formats":["json","text"],"summary":"Compute deterministic variable associations against a target variable."},"explain":{"options":[{"name":"input","position":"positional","required":true,"type":"path"},{"name":"--target","required":true,"type":"string"}],"output_formats":["json","text"],"summary":"Produce an interpretation payload from computed associations."},"report":{"options":[{"name":"input","position":"positional","required":true,"type":"path"},{"name":"--target","required":true,"type":"string"},{"name":"--var","required":true,"type":"string"},{"name":"--delta","required":true,"type":"number"},{"name":"--output","required":true,"type":"path"}],"output_formats":["json","text"],"summary":
+... <truncated>
+
+  STDERR preview:
+<empty>
+[schema_missing_csv] Code retour attendu 2, obtenu 0.
+  Args   : python -m app.cli schema C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\missing.csv
+  RC     : 0
+  STDOUT : C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\logs\041_schema_missing_csv.stdout.txt
+  STDERR : C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\logs\041_schema_missing_csv.stderr.txt
+
+  STDOUT preview:
+schema commands: correlate, explain, report, schema, simulate, variables
+
+  STDERR preview:
+<empty>
+[schema_missing_csv] STDOUT devrait être vide.
+  Args   : python -m app.cli schema C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\missing.csv
+  RC     : 0
+  STDOUT : C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\logs\041_schema_missing_csv.stdout.txt
+  STDERR : C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\logs\041_schema_missing_csv.stderr.txt
+
+  STDOUT preview:
+schema commands: correlate, explain, report, schema, simulate, variables
+
+  STDERR preview:
+<empty>
+[schema_missing_csv] STDERR ne contient pas le jeton attendu : error:
+  Args   : python -m app.cli schema C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\input\missing.csv
+  RC     : 0
+  STDOUT : C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\logs\041_schema_missing_csv.stdout.txt
+  STDERR : C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\.tmp_um_harness_manual_causalab\logs\041_schema_missing_csv.stderr.txt
+
+  STDOUT preview:
+schema commands: correlate, explain, report, schema, simulate, variables
+
+  STDERR preview:
+<empty>
+Exception: C:\Users\Utilisateur\Documents\mARCHCode\pytest-5948\test_phase2_preflight_acw_chec0\repo\.archcode\test_um_harness_manual_causalab.ps1:751
+Line |
+ 751 |    throw "$($script:Failures.Count) échec(s) détecté(s) dans la batter …
+     |    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | 6 échec(s) détecté(s) dans la batterie UM_HARNESS manual.
+```
+
+
 UM_HARNESS identified the mismatch as a user-manual workflow failure and targeted the relevant runtime dispatch behavior for correction.
 
-After correction, the same independent manual-derived battery was run again. The documented workflow passed, including:
-
-- top-level help;
-- no-argument help behavior;
-- subcommand help;
-- schema text output;
-- schema JSON output;
-- variables output;
-- correlation output;
-- explanation output;
-- simulation output;
-- report generation;
-- report determinism;
-- expected user errors.
-
-This produced a clean before/after case: the manual-derived workflow was initially red, then green after the correction.
-
-## What UM_HARNESS adds
-
-UM_HARNESS adds a validation layer that is closer to the user’s experience.
-
-It can detect cases where:
-
-- help text exists but runtime behavior is wrong;
-- a command accepts the documented arguments but ignores the input file;
-- JSON output is parseable but semantically incorrect;
-- a report is created but lacks documented sections;
-- a workflow loses important identifiers across commands;
-- a documented error case incorrectly succeeds.
-
-This is useful because generated software can appear superficially correct while still failing the workflow described to the user.
-
-## Findings
-
-Documentation becomes more valuable when it can be executed and checked against the generated software.
-
-The CausalLab case showed that the generated user manual can expose a meaningful behavioral contract. The key failure was not the absence of a command, but the mismatch between the documented meaning of the command and the actual runtime output.
-
-UM_HARNESS helped move validation from interface presence toward workflow semantics.
 
 ```text
 === UM_HARNESS manual battery :: CausalLab CLI ===
@@ -187,6 +282,47 @@ Logs : C:\Users\Utilisateur\AppData\Local\Temp\pytest-of-Utilisateur\pytest-5948
 
 OK - Batterie UM_HARNESS manual verte.
 ```
+
+
+After correction, the same independent manual-derived battery was run again. The documented workflow passed, including:
+
+- top-level help;
+- no-argument help behavior;
+- subcommand help;
+- schema text output;
+- schema JSON output;
+- variables output;
+- correlation output;
+- explanation output;
+- simulation output;
+- report generation;
+- report determinism;
+- expected user errors.
+
+This produced a clean before/after case: the manual-derived workflow was initially red, then green after the correction.
+
+## What UM_HARNESS adds
+
+UM_HARNESS adds a validation layer that is closer to the user’s experience.
+
+It can detect cases where:
+
+- help text exists but runtime behavior is wrong;
+- a command accepts the documented arguments but ignores the input file;
+- JSON output is parseable but semantically incorrect;
+- a report is created but lacks documented sections;
+- a workflow loses important identifiers across commands;
+- a documented error case incorrectly succeeds.
+
+This is useful because generated software can appear superficially correct while still failing the workflow described to the user.
+
+## Findings
+
+Documentation becomes more valuable when it can be executed and checked against the generated software.
+
+The CausalLab case showed that the generated user manual can expose a meaningful behavioral contract. The key failure was not the absence of a command, but the mismatch between the documented meaning of the command and the actual runtime output.
+
+UM_HARNESS helped move validation from interface presence toward workflow semantics.
 
 ## Relationship with other probes
 
