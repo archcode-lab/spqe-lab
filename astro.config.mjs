@@ -34,9 +34,7 @@ export default defineConfig({
             { slug: 'request-kit/contact-dossier-form' },
             { slug: 'request-kit/prototype-request-form' },
             { slug: 'request-kit/specblock-best-practices' },
-            { slug: 'request-kit/complete-specblock-example' },
-            { slug: 'request-kit/noisedoselab-complete-specblock-example' }
-          ]
+            { slug: 'request-kit/complete-specblock-example' },          ]
         },
         {
           label: 'About',
@@ -49,4 +47,5 @@ export default defineConfig({
     })
   ]
 });
+
 
