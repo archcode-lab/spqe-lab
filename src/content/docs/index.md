@@ -5,6 +5,8 @@ description: SpQE Lab turns structured prototype requests into generated, tested
 
 **SpQE Lab**
 
+*This public showcase was launched in July 2026.*
+
 SpQE Lab turns a structured prototype request into a generated, tested, repaired, documented, and inspectable software prototype.
 
 SpQE Lab explores a simple but difficult question:
