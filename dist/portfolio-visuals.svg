@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 240" role="img" aria-labelledby="sprite-title sprite-description">
+  <title id="sprite-title">SPQE Lab portfolio visual symbols</title>
+  <desc id="sprite-description">Four calm, editorial project illustrations for Folder Archaeology, NoiseDoseLab, Evidence Timeline, and PlateBridge.</desc>
+  <defs>
+    <linearGradient id="pv-blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#0f3d91"/>
+    </linearGradient>
+    <linearGradient id="pv-mist" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eff6ff"/>
+      <stop offset="100%" stop-color="#dbeafe"/>
+    </linearGradient>
+    <filter id="pv-shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#0f172a" flood-opacity=".12"/>
+    </filter>
+    <style>
+      .pv-card { fill: #ffffff; stroke: #dbe4f0; stroke-width: 1.5; }
+      .pv-line { fill: none; stroke: #90a4c2; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; }
+      .pv-fine { fill: none; stroke: #c7d5e7; stroke-linecap: round; stroke-width: 1.5; }
+      .pv-ink { fill: #14213d; }
+      .pv-muted { fill: #64748b; }
+      .pv-accent { fill: #2563eb; }
+      .pv-label { fill: #14213d; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: .04em; }
+      .pv-small { fill: #64748b; font-family: Arial, Helvetica, sans-serif; font-size: 9px; }
+    </style>
+  </defs>
+
+  <symbol id="folder-archaeology" viewBox="0 0 240 240">
+    <title>Folder Archaeology</title>
+    <desc>A layered folder and document index illustration.</desc>
+    <rect x="18" y="22" width="204" height="196" rx="20" fill="#f8fafc"/>
+    <circle cx="190" cy="48" r="20" fill="url(#pv-mist)"/>
+    <path d="M183 48h14M190 41v14" class="pv-line"/>
+    <g filter="url(#pv-shadow)">
+      <path d="M48 76c0-7 6-13 13-13h38l13 14h67c7 0 13 6 13 13v76c0 7-6 13-13 13H61c-7 0-13-6-13-13z" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.5"/>
+      <path d="M48 94h144v72c0 7-6 13-13 13H61c-7 0-13-6-13-13z" fill="#fff"/>
+    </g>
+    <rect x="72" y="109" width="75" height="11" rx="5.5" fill="#dbeafe"/>
+    <rect x="72" y="130" width="97" height="8" rx="4" fill="#e2e8f0"/>
+    <rect x="72" y="147" width="61" height="8" rx="4" fill="#e2e8f0"/>
+    <circle cx="164" cy="115" r="12" fill="url(#pv-blue)"/>
+    <path d="m159 115 3 3 6-7" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path d="M38 185h70" class="pv-fine"/>
+    <text x="38" y="204" class="pv-label">FOLDER ARCHAEOLOGY</text>
+  </symbol>
+
+  <symbol id="noise-dose-lab" viewBox="0 0 240 240">
+    <title>NoiseDoseLab</title>
+    <desc>An audio waveform measured against a dose threshold.</desc>
+    <rect x="18" y="22" width="204" height="196" rx="20" fill="#f8fafc"/>
+    <g filter="url(#pv-shadow)">
+      <rect x="42" y="62" width="156" height="111" rx="14" class="pv-card"/>
+    </g>
+    <path d="M58 116h10l7-21 10 44 11-65 11 84 11-55 10 28 10-15 9 5h14" fill="none" stroke="url(#pv-blue)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <path d="M58 90h124" stroke="#f59e0b" stroke-dasharray="5 5" stroke-linecap="round" stroke-width="2"/>
+    <text x="146" y="84" class="pv-small">threshold</text>
+    <path d="M60 147h120" class="pv-fine"/>
+    <circle cx="69" cy="155" r="4" fill="#2563eb"/>
+    <circle cx="92" cy="155" r="4" fill="#60a5fa"/>
+    <circle cx="115" cy="155" r="4" fill="#93c5fd"/>
+    <text x="42" y="198" class="pv-label">NOISEDOSELAB</text>
+  </symbol>
+
+  <symbol id="evidence-timeline" viewBox="0 0 240 240">
+    <title>Evidence Timeline</title>
+    <desc>A chronological evidence trail with connected records.</desc>
+    <rect x="18" y="22" width="204" height="196" rx="20" fill="#f8fafc"/>
+    <path d="M67 60v118" class="pv-fine"/>
+    <path d="M67 82h42M67 120h72M67 158h49" class="pv-line"/>
+    <g filter="url(#pv-shadow)">
+      <rect x="108" y="65" width="75" height="34" rx="8" class="pv-card"/>
+      <rect x="138" y="103" width="52" height="34" rx="8" class="pv-card"/>
+      <rect x="115" y="141" width="69" height="34" rx="8" class="pv-card"/>
+    </g>
+    <circle cx="67" cy="82" r="7" fill="url(#pv-blue)"/>
+    <circle cx="67" cy="120" r="7" fill="#60a5fa"/>
+    <circle cx="67" cy="158" r="7" fill="#93c5fd"/>
+    <rect x="120" y="76" width="37" height="5" rx="2.5" fill="#2563eb"/>
+    <rect x="120" y="86" width="49" height="4" rx="2" fill="#dbe4f0"/>
+    <rect x="149" y="114" width="27" height="5" rx="2.5" fill="#2563eb"/>
+    <rect x="149" y="124" width="30" height="4" rx="2" fill="#dbe4f0"/>
+    <rect x="127" y="152" width="35" height="5" rx="2.5" fill="#2563eb"/>
+    <rect x="127" y="162" width="45" height="4" rx="2" fill="#dbe4f0"/>
+    <text x="42" y="204" class="pv-label">EVIDENCE TIMELINE</text>
+  </symbol>
+
+  <symbol id="plate-bridge" viewBox="0 0 240 240">
+    <title>PlateBridge</title>
+    <desc>A bridge-like connection between two structured research plates.</desc>
+    <rect x="18" y="22" width="204" height="196" rx="20" fill="#f8fafc"/>
+    <g filter="url(#pv-shadow)">
+      <rect x="40" y="77" width="57" height="74" rx="12" class="pv-card"/>
+      <rect x="143" y="77" width="57" height="74" rx="12" class="pv-card"/>
+    </g>
+    <path d="M97 114h46" fill="none" stroke="url(#pv-blue)" stroke-width="5"/>
+    <path d="m132 103 11 11-11 11" fill="none" stroke="#2563eb" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <g fill="#93c5fd">
+      <circle cx="58" cy="96" r="5"/><circle cx="76" cy="96" r="5"/>
+      <circle cx="58" cy="114" r="5"/><circle cx="76" cy="114" r="5"/>
+      <circle cx="58" cy="132" r="5"/><circle cx="76" cy="132" r="5"/>
+    </g>
+    <g fill="#2563eb">
+      <circle cx="161" cy="96" r="5"/><circle cx="179" cy="96" r="5"/>
+      <circle cx="161" cy="114" r="5"/><circle cx="179" cy="114" r="5"/>
+      <circle cx="161" cy="132" r="5"/><circle cx="179" cy="132" r="5"/>
+    </g>
+    <path d="M50 168h140" class="pv-fine"/>
+    <text x="42" y="204" class="pv-label">PLATEBRIDGE</text>
+  </symbol>
+</svg>

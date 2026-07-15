@@ -1,0 +1,17 @@
+{
+  "name": "SPQE Lab",
+  "short_name": "SPQE Lab",
+  "description": "SPQE Lab is a digital studio for strategy, product, and experience.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f8fa",
+  "theme_color": "#1f5eff",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

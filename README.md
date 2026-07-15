@@ -1,126 +1,118 @@
-# Specification-to-Prototype Qualification Engine Lab
+# SPQE Lab Site
 
-**SpQE Lab** is an applied research project on controlled AI software generation.
+A static React site for SPQE Lab, built with React and Vite. The project uses a
+restrained light visual system: white and soft-gray surfaces, deep navy text,
+blue accents, subtle borders and shadows, generous spacing, readable
+typography, and rounded cards.
 
-SpQE stands for **Specification-to-Prototype Qualification Engine**.
+## Scope
 
-The project explores how structured software requirements can be transformed into generated, tested, repaired, documented, and inspectable software prototypes.
+This repository contains the frontend lifecycle only:
 
-## Public showcase
+- **UI library:** React
+- **Development, build, and preview toolchain:** Vite
+- **Testing:** Vitest
+- **Runtime:** static browser application
 
-The live showcase is the recommended entry point:
+Django is outside this lifecycle. This project does not require a Django server,
+Django models, or backend persistence to develop, test, build, or preview the
+site.
 
-https://archcode-lab.github.io/spqe-lab/
+## Requirements
 
-## What SpQE Lab does
+Install a supported current Node.js LTS release and npm. Verify the tools before
+continuing:
 
-SpQE Lab studies a controlled software-generation process.
+node --version
+npm --version
 
-The system does not simply ask an LLM to “write code”.
+## Setup
 
-It starts from a structured specification, called a **SpecBlock**, and runs a complete generation and qualification loop around it:
+From the project root, install the declared dependencies:
 
-```text
-specification
-→ generation
-→ execution
-→ validation
-→ targeted repair
-→ revalidation
-→ documentation
-→ qualified prototype
-````
+npm install
 
-The objective is not only to generate source code.
+Start the Vite development server:
 
-The objective is to produce a runnable and inspectable prototype together with evidence about its behavior, validation results, repair history, documentation, and current limitations.
+npm run dev
 
-## Why this repository exists
+Vite prints the local address after startup. Open that address in a browser to
+work on the site with hot module replacement.
 
-This repository hosts the source content of the public SpQE Lab showcase.
+## Available Commands
 
-The showcase documents:
+### Run tests
 
-* concrete prototype experiments;
-* generated software artifacts;
-* SpecBlock examples;
-* execution and validation outputs;
-* detected failures;
-* targeted repair loops;
-* user manuals;
-* qualification evidence;
-* methods for controlled prototype generation;
-* resources for submitting external prototype use cases.
+npm test
 
-The live website provides the clearest overview of the project:
+Use the test command to run the Vitest suite. Keep tests passing when changing
+routing, locale behavior, content catalog data, or the contact submission
+adapter.
 
-[https://archcode-lab.github.io/spqe-lab/](https://archcode-lab.github.io/spqe-lab/)
+### Build for production
 
-## Looking for external prototype use cases
+npm run build
 
-SpQE has already been developed and tested across several concrete prototype cases.
+The production build is written to Vite's configured output directory, normally
+`dist/`. Build output is generated material and should be recreated rather than
+edited by hand.
 
-The current objective is to evaluate the system on small external use cases: prototype needs that originate outside the project and were not designed in advance around SpQE.
+### Preview the production build
 
-These external cases can help reveal new requirements, assumptions, constraints, failure modes, and software patterns.
+npm run preview
 
-Suitable examples include:
+Run this after `npm run build` to serve the built static files locally. Preview
+is the appropriate final check for route loading, responsive layouts, asset
+paths, and production-only rendering differences.
 
-* command-line tools;
-* CSV or JSON processors;
-* validation utilities;
-* extraction tools;
-* report generators;
-* local workflow tools;
-* automation utilities;
-* scientific or technical calculators;
-* deterministic data-processing prototypes;
-* other bounded, concrete, and testable software needs.
+## Central Editing Locations
 
-A useful request should describe:
+Keep content changes in their intended source modules rather than duplicating
+copy across page components.
 
-1. what the prototype should do;
-2. what input it should accept;
-3. what output it should produce;
-4. one normal usage example;
-5. one error case or edge case;
-6. any constraints that should remain stable.
+- `src/content` or the project's content catalog modules hold shared editorial
+  text, portfolio data, and localized content.
+- `src/components` contains reusable interface components and primitives.
+- `src/pages` contains route-level page composition.
+- `src/styles` and the CSS modules in the source tree define the visual system,
+  responsive layout, focus states, and component presentation.
+- `public` contains static public assets such as the favicon and visual files.
 
-To prepare an external prototype request, please use the:
+Before adding a new page-specific string, check the existing content and locale
+modules for an established central entry point. Preserve semantic HTML
+landmarks, logical heading order, accessible names, visible keyboard focus,
+sufficient contrast, descriptive alternative text, and practical touch target
+sizes when editing the interface.
 
-[SpQE Lab Request Kit](https://archcode-lab.github.io/spqe-lab/request-kit/)
+Do not turn unavailable demos, downloads, repositories, or project destinations
+into active links. Use plain text until a real destination is available.
 
-## Current status
+## Contact Form Configuration
 
-SpQE Lab is an active applied research project.
+The contact form is a browser-side interaction. Submission data is kept in
+component memory only for the current session.
 
-The project does not claim that AI software generation is solved.
+Do not persist project descriptions, names, email addresses, or submission
+payloads in localStorage, sessionStorage, IndexedDB, cookies, analytics logs,
+or application logs. If a production delivery service is later introduced, add
+its configuration through an explicitly reviewed integration rather than
+embedding credentials or persistence behavior in the frontend.
 
-It studies the conditions that may make AI-generated software more:
+## Release Readiness
 
-* structured;
-* observable;
-* testable;
-* repairable;
-* reproducible;
-* documented;
-* inspectable;
-* economically accessible.
+Before publishing a release:
 
-The current research phase focuses on external prototype use cases and independent technical feedback.
+1. Install dependencies from the lockfile or declared package manifest.
+2. Run `npm test` and resolve failures.
+3. Run `npm run build` and resolve build warnings or errors.
+4. Run `npm run preview` and inspect the built site at desktop and mobile widths.
+5. Check navigation, locale behavior, page headings, keyboard focus, form labels,
+   alternative text, and contrast.
+6. Confirm that no placeholder or unavailable URL is exposed as an active link.
+7. Confirm that contact form values remain in memory and are not written to
+   browser storage, cookies, or logs.
+8. Review public assets and generated output for only intended release content.
 
-## Start here
-
-Visit the public showcase:
-
-[https://archcode-lab.github.io/spqe-lab/](https://archcode-lab.github.io/spqe-lab/)
-
-Then explore:
-
-* the documented prototype experiments;
-* the generation and qualification methods;
-* the SpecBlock examples;
-* the Request Kit;
-* GitHub Discussions for questions and technical feedback;
-* GitHub Issues for concrete external prototype cases.
-
+The deployable artifact is the static Vite build output. Hosting, backend
+services, contact delivery infrastructure, and Django integration are separate
+operational concerns.

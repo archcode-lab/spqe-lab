@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
+  <title id="title">SPQE Lab mark</title>
+  <desc id="description">A blue and navy geometric mark formed by layered rounded squares and a central spark.</desc>
+  <defs>
+    <linearGradient id="blue-gradient" x1="92" y1="76" x2="420" y2="436" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2f80ed"/>
+      <stop offset="1" stop-color="#1456b8"/>
+    </linearGradient>
+    <filter id="soft-shadow" x="58" y="58" width="396" height="396" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#102a52" flood-opacity=".16"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#f7f9fc"/>
+  <g filter="url(#soft-shadow)">
+    <rect x="92" y="92" width="328" height="328" rx="80" fill="#ffffff" stroke="#dbe5f1" stroke-width="8"/>
+    <path d="M172 148h105c50.258 0 91 40.742 91 91v34c0 50.258-40.742 91-91 91H172V148Z" fill="url(#blue-gradient)"/>
+    <path d="M213 188h61c30.376 0 55 24.624 55 55v26c0 30.376-24.624 55-55 55h-61V188Z" fill="#ffffff" fill-opacity=".96"/>
+    <path d="M167 173c0-12.703 10.297-23 23-23h81c12.703 0 23 10.297 23 23v31h-104c-12.703 0-23-10.297-23-23v-8Z" fill="#102a52"/>
+    <path d="M167 331c0-12.703 10.297-23 23-23h104v31c0 12.703-10.297 23-23 23h-81c-12.703 0-23-10.297-23-23v-8Z" fill="#102a52"/>
+    <path d="m350 176 8.448 22.552L381 207l-22.552 8.448L350 238l-8.448-22.552L319 207l22.552-8.448L350 176Z" fill="#74b2ff"/>
+    <circle cx="350" cy="207" r="7" fill="#ffffff"/>
+  </g>
+</svg>
